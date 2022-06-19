@@ -28,7 +28,11 @@
 <section class="comments">
   <div class="container">
     <h2 class="subtitle is-5"><strong><%= @post.comments.count%> Comments</strong></h2>
-    <%= @post.comments %>
+    <% @post.comments %>
+    <div class="comments">
+      <%= @post.comments.name %>
+       <%= @post.comments.name %>
+    </div>
     <div class="comment-form">
       <br />
       <h3 class="subtitle is-3">Leave a reply</h3>
