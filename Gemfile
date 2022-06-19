@@ -31,7 +31,6 @@ gem "jbuilder"
 # gem "redis", "~> 4.0"
 
 # make errors better looking
-gem 'better_errors', '~> 2.9', '>= 2.9.1'
 
 # Bulma css framework
 gem 'bulma-rails', '~> 0.9.3'
@@ -71,6 +70,10 @@ group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
 
+   gem "better_errors"
+
+   gem "binding_of_caller"
+
   gem 'libnotify', '~> 0.9.4'
 
   gem 'listen', '~> 3.7', '>= 3.7.1'
@@ -79,7 +82,7 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0', '>= 2.0.1'
 
-  gem 'guard', '~> 2.18', require: false
+  gem 'guard', '~> 2.18'
 
   # Guard::LiveReload automatically reloads your browser when 'view' files are modified.
   gem 'guard-livereload', '~> 2.5', require: false
